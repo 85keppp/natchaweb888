@@ -84,7 +84,7 @@ const DATA = {
       {
         name:    "นวดหน้า",
         subName: "Facial Treatment",
-        icon:    "fa-solid fa-face-smile-relaxed",
+        icon:    "fa-solid fa-face-grin",
         items: [
           {
             name:  "ทรีตเมนต์หน้าใสออร์แกนิค",
@@ -112,7 +112,7 @@ const DATA = {
       {
         name:    "สปา",
         subName: "Spa & Body Treatment",
-        icon:    "fa-solid fa-spa",
+        icon:    "fa-solid fa-person-dots-from-line",
         items: [
           {
             name:  "นวดอโรมาธาราพี",
@@ -189,7 +189,7 @@ const DATA = {
       {
         name:    "ผม",
         subName: "Hair Treatment",
-        icon:    "fa-solid fa-scissors",
+        icon:   "fa-solid fa-ruler",
         items: [
           {
             name:  "ทรีตเมนต์บำรุงผม",
