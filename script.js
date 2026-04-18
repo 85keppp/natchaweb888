@@ -206,6 +206,16 @@ const DATA = {
           },
         ],
       },
+      {
+        name:    "เล็บ",
+        subName: "Nail",
+        icon:    "fa-solid fa-hand-sparkles",
+        items: [
+          {
+            image: "image/nailmenu.jpg"
+          },
+        ],
+      },
     ],
   },
 
@@ -310,11 +320,38 @@ function buildAccordionItem(cat) {
   cat.items.forEach(item => list.appendChild(buildMenuCard(item)));
   body.appendChild(list);
 
-  header.addEventListener("click", () => toggleAccordion(header, body));
+  header.addEventListener("click", () => {
+  if (cat.name === "เล็บ") {
+    openNailGallery(cat.items);
+  } else {
+    toggleAccordion(header, body);
+  }
+});
 
   item.appendChild(header);
   item.appendChild(body);
   return item;
+}
+
+function openNailGallery(items) {
+  const overlay = document.createElement("div");
+  overlay.className = "nail-overlay";
+
+  overlay.innerHTML = `
+    <div class="nail-gallery">
+      ${items.map(i => `
+        <img src="${i.image}" alt="${i.name}" />
+      `).join("")}
+    </div>
+    <div class="nail-close">✕</div>
+  `;
+
+  overlay.querySelector(".nail-close").onclick = () => overlay.remove();
+  overlay.onclick = (e) => {
+    if (e.target === overlay) overlay.remove();
+  };
+
+  document.body.appendChild(overlay);
 }
 
 /** Create a promo card element */

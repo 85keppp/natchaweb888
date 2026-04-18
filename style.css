@@ -580,6 +580,54 @@ footer {
 .f-socials a:hover { border-color: var(--gold2); color: var(--gold2); transform: translateY(-2px); }
 .f-copy { font-size: .7rem; }
 
+/* FULLSCREEN NAIL GALLERY */
+.nail-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.92);
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: fadeIn .3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.nail-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  width: 90%;
+  max-width: 1100px;
+}
+
+.nail-gallery img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform .3s ease;
+}
+
+.nail-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.nail-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
 /* ═══════════════════════════════════════════════
    RESPONSIVE — DESKTOP
 ═══════════════════════════════════════════════ */
