@@ -10,9 +10,9 @@
   --bl:    #d4a878;   /* light brown */
 
   /* Green scale */
-  --olive:  #3d4e30;  /* deep olive – primary green */
+  --olive:  #6c815c;  /* deep olive – primary green */
   --sage:   #5a6e47;  /* medium sage */
-  --sage2:  #e5ebdc;  /* pale sage background */
+  --sage2:  #dee6ce;  /* pale sage background */
   --sage3:  #a7c2ac;  /* lightest sage */
 
   /* Background tones (NO white) */
@@ -69,7 +69,7 @@ a   { color: inherit; }
    BACKGROUND HELPERS
 ═══════════════════════════════════════════════ */
 .bg-ivory { background: var(--ivory); }
-.bg-sage  { background: var(--ivory); }
+.bg-sage  { background: var(--linen); }
 .bg-deep  { background: var(--bd);   }
 .bg-olive { background: var(--sage2); }
 
@@ -447,7 +447,7 @@ a   { color: inherit; }
 
 /* Menu card (horizontal) */
 .menu-card {
-  background: var(--sage3); border-radius: var(--r-sm);
+  background: var(--sage2); border-radius: var(--r-sm);
   display: flex; overflow: hidden; min-height: 100px;
   transition: box-shadow .25s, transform .25s;
 }
