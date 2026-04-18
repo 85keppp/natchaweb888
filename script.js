@@ -340,21 +340,23 @@ function buildPromoCard(promo) {
    ACCORDION LOGIC
 ═══════════════════════════════════════════════ */
 function toggleAccordion(header, body) {
+  const item = header.parentElement; // << ตัว acc-item
   const isAlreadyOpen = header.classList.contains("is-open");
 
-  // Close all
+  // ปิดทั้งหมด
   document.querySelectorAll(".acc-header.is-open").forEach(h => {
     h.classList.remove("is-open");
     h.nextElementSibling.classList.remove("is-open");
+    h.parentElement.classList.remove("is-open"); // << เพิ่มตรงนี้
   });
 
-  // Open clicked if it was closed
+  // เปิดอันที่กด
   if (!isAlreadyOpen) {
     header.classList.add("is-open");
     body.classList.add("is-open");
+    item.classList.add("is-open"); // << เพิ่มตรงนี้
   }
 }
-
 /* ═══════════════════════════════════════════════
    POPULATE HTML with DATA
 ═══════════════════════════════════════════════ */

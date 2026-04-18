@@ -408,6 +408,10 @@ a   { color: inherit; }
   background: var(--ivory); border-radius: var(--r-md);
   box-shadow: var(--sh-sm); overflow: hidden;
 }
+.acc-item.is-open {
+  background: #ced6c8; /* หรือสีที่อยากให้ตอนกด */
+  box-shadow: var(--sh-md);
+}
 
 .acc-header {
   display: flex; align-items: center; justify-content: space-between;
@@ -416,7 +420,7 @@ a   { color: inherit; }
   gap: 1rem;
 }
 .acc-header:hover       { background: var(--linen); }
-.acc-header.is-open     { background: var(--linen); }
+.acc-header.is-open     { background: #c3ccbc }
 
 .acc-title-wrap { display: flex; align-items: center; gap: .72rem; }
 .acc-icon-wrap {
@@ -447,7 +451,7 @@ a   { color: inherit; }
 
 /* Menu card (horizontal) */
 .menu-card {
-  background: var(--sage2); border-radius: var(--r-sm);
+  background: var(--linen); border-radius: var(--r-sm);
   display: flex; overflow: hidden; min-height: 100px;
   transition: box-shadow .25s, transform .25s;
 }
