@@ -71,7 +71,7 @@ a   { color: inherit; }
 .bg-ivory { background: var(--ivory); }
 .bg-sage  { background: var(--ivory); }
 .bg-deep  { background: var(--bd);   }
-.bg-olive { background: var(--sage3); }
+.bg-olive { background: var(--sage2); }
 
 /* ═══════════════════════════════════════════════
    REUSABLE UI ATOMS
