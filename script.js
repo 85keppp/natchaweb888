@@ -256,7 +256,7 @@ const DATA = {
           {
             name:  "ต่อขนตา ไม่จำกัดเส้น",
             desc:  "",
-            price: 699,799
+            price: 699.799,
             time:  90,
             image: "https://images.unsplash.com/photo-1609357605129-74f2a1f0a7c0?w=300&q=80",
           },
