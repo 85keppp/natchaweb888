@@ -180,14 +180,14 @@ const DATA = {
             name:  "แว็กซ์บริเวณหนวด (หญิง)",
             desc:  "",
             price: 199,
-            time:  ,
+            
             image: "https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?w=300&q=80",
           },
           {
             name:  "แว็กซ์คิ้ว2ข้าง พร้อมตกแต่ง",
             desc:  "",
             price: 299,
-            time:  ,
+            
             image: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=300&q=80",
           },
         ],
